@@ -3,7 +3,6 @@ import getProduct from '@/actions/get-product';
 import getSingleCategory from '@/actions/get-singleCategory';
 import getSize from '@/actions/get-size';
 import Billboard from '@/components/billboard';
-import ProductList from '@/components/product-list';
 import ProductCardSkele from '@/components/skeletons/product-card-skele';
 import Container from '@/components/ui/container';
 import Filter from '@/components/ui/filter';

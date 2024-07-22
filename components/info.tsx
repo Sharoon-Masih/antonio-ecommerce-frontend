@@ -1,13 +1,16 @@
+'use client'
 import { Product } from '@/type'
 import React, { FC } from 'react'
 import CurrencyFormatter from './ui/currency-frmt'
 import Button from './ui/button'
 import { ShoppingCart } from 'lucide-react'
+import { useCartModal } from '@/hooks/use-cart-modal'
 
 interface InfoProps {
     data: Product
 }
 const Info: FC<InfoProps> = ({ data }) => {
+    const {addItem} =useCartModal()
     return (
         <>
             <h1 className='text-3xl lg:text-4xl font-semibold'>{data.name}</h1>
@@ -24,7 +27,7 @@ const Info: FC<InfoProps> = ({ data }) => {
                 <div className='w-6 h-6 rounded-full border border-gray-600' style={{ backgroundColor: data.color.value }}></div>
             </div>
             <div className='mt-10'>
-                <Button className='rounded-full flex items-center justify-center gap-3 px-3 py-2'>
+                <Button className='rounded-full flex items-center justify-center gap-3 px-3 py-2' onClick={() => {addItem(data)}}>
                     add to cart
                     <ShoppingCart/>
                 </Button>
