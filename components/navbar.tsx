@@ -18,7 +18,7 @@ return (
                     SHOPPY
                 </p>
             </Link>
-            <MainNav data={categories}/>
+            <MainNav data={categories} />
             <NavAction/>
         </div>
     </Container>
