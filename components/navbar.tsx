@@ -15,7 +15,7 @@ return (
         <div className='h-16 px-4 sm:px-6 lg:px-8 items-center flex relative'>
             <Link href={'/'} className=' ml-4 lg:ml-0 flex gap-x-2'>
                 <p className='text-xl font-bold'>
-                    STORE
+                    SHOPPY
                 </p>
             </Link>
             <MainNav data={categories}/>

@@ -10,7 +10,7 @@ import ToastProvider from "@/providers/toast-provider";
 const urbanFont = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Store",
+  title: "Shoppy",
   description: "Created by Sharoon",
 };
 
